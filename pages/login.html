@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="./../css/styles.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f2f2f2;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+		}
+
+		.logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 40px;
+		}
+
+		.logo img {
+			max-width: 200px;
+			max-height: 200px;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #ecf7a3;
+			padding: 40px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+
+		form h2 {
+			font-size: 24px;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		form input[type="text"],
+		form input[type="password"] {
+			font-size: 16px;
+			padding: 10px;
+			margin-bottom: 20px;
+			border-radius: 5px;
+			border: none;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		form input[type="submit"] {
+			background-color: #f97171;
+			color: #ecf7a3;
+			font-size: 16px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		form input[type="submit"]:hover {
+			background-color: #555;
+		}
+
+		form p {
+			font-size: 14px;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		form a {
+			color: #333;
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="logo">
+			<img src="./../img/logoo.png" alt="Logo">
+		</div>
+		<form>
+			<h2>Login</h2>
+			<input type="text" name="username" placeholder="Username" required>
+			<input type="password" name="password" placeholder="Password" required>
+			<input type="submit" value="Login">
+			<p>Don't have an account? <a href="./signup.html">Sign up</a></p>
+		</form>
+	</div>
+</body>
+</html>
